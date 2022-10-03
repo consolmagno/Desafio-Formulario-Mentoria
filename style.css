@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root{
+  /* Cores */
+  --principal-color: #535971;
+  --second-color: #EFEFEF;
+  --button-color: #FF5374;
+  /* Fonts */
+  --text-font-family: 'Poppins', sans-serif;
+  --title-font-family: 'Staatliches', cursive;
+  /* Size */
+  --title-font-size:48px;
+  --subtitle-font-size:24px;
+  --legend-font-size:14px;
+  --discription-font-size:12px;
+}
+
+body{
+  background-color: var(--second-color);
+}
+
+.hero h1 {
+  color: white;
+  font: 400 var(--title-font-size) var(--title-font-family);
+  line-height: 60px;
+  margin-bottom: 16px;
+}
+
+.hero p{
+  color: white;
+  font: 400 20px var(--text-font-family);
+  line-height: 30px;
+  max-width:352px;
+}
+
+header{
+  background: var(--principal-color);
+  display: flex;
+  height: 456px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+}
+
+main{
+  width: 750px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 64px;
+  border-radius: 20px 20px 0 0;
+}
+
+legend{
+  font: 400 var(--subtitle-font-size) var(--title-font-family);
+  color: var(--principal-color);
+}
+
+label{
+  font: 400 var(--legend-font-size) var(--text-font-family);
+}
+
+hr{
+  margin: 6px 0 36px;
+  border: solid 1px #E6E6F0;
+}
+
+fieldset{
+  border: none;
+}
+
+.input-group{
+  display: flex;
+  gap: 22px;
+
+}
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input{
+  background-color: #FAFAFC;
+  border: solid 1px #E6E6F0;
+  height: 56px;
+  border-radius: 8px;
+  margin: 8px 0 20px;
+}
+
+span{
+  font-size: 12px;
+  color: #C1BCCC;
+}
