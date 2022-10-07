@@ -31,6 +31,17 @@ body{
   background-color: var(--second-color);
 }
 
+body::before{
+  content: '';
+  width: 100%;
+  background: var(--principal-color);
+  height: 456px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .hero h1 {
   color: white;
   font: 400 var(--title-font-size) var(--title-font-family);
@@ -46,11 +57,10 @@ body{
 }
 
 header{
-  background: var(--principal-color);
   display: flex;
-  height: 456px;
   align-items: center;
   justify-content: center;
+  margin: 140px auto 58px;
 }
 
 .hero{
@@ -59,8 +69,12 @@ header{
   width: 750px;
 }
 
-main{
+.page{
   width: 750px;
+  margin: 0 auto;
+}
+
+main{
   background-color: white;
   margin: 0 auto;
   padding: 64px;
@@ -104,15 +118,46 @@ input{
   border-radius: 8px;
   margin: 8px 0 20px;
   padding: 8px;
+  font: 400 12px var(--text-font-family);
+  color: #545357;
+}
+
+input:invalid{
+  border: 1px solid red;
 }
 
 span{
   font-size: 12px;
   color: #C1BCCC;
+  margin-left: 6px;
 }
 
 h2{
   font: 400 20px var(--title-font-family);
   line-height: 34px;
   color: var(--principal-color);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  background-color: var(--principal-color);
+  padding: 52px 71px;
+  margin-bottom: 366px;
+  border-radius: 0 0 8px 8px;
+}
+
+button{
+  font: 400 20px var(--title-font-family);
+  color: white;
+  background-color: var(--button-color);
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  line-height: 26px;
+}
+
+button:hover{
+  background-color: #d64763;
 }

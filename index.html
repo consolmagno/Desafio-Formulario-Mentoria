@@ -22,9 +22,9 @@
         <p>Preencha o formulário abaixo para agendar sua mentoria</p>
       </div>
     </header>
-    <main>
-      <div>
-        <form action="">
+    <div class="page">
+      <main>
+        <form id="my-form" action="">
           <fieldset>
             <legend>Informações Pessoais</legend>
             <hr />
@@ -32,24 +32,24 @@
               <div class="input-group">
                 <div class="input-wrapper">
                   <label for="name">Nome</label>
-                  <input id="name" type="text" />
+                  <input id="name" type="text" required />
                 </div>
                 <div class="input-wrapper">
                   <label for="surname">Sobrenome</label>
-                  <input id="surname" type="text" />
+                  <input id="surname" type="text" required />
                 </div>
               </div>
               <div class="input-wrapper">
                 <label for="email"
-                  >Email <span>(digite um email válido)</span></label
+                  >Email<span>(digite um email válido)</span></label
                 >
-                <input id="email" type="email" />
+                <input id="email" type="email" required />
               </div>
               <div class="input-wrapper">
                 <label for="password"
-                  >Senha <span>(mínimo de 5 caracteres)</span></label
+                  >Senha<span>(mínimo de 5 caracteres)</span></label
                 >
-                <input id="password" type="password" />
+                <input id="password" type="password" required minlength="5" />
               </div>
             </div>
           </fieldset>
@@ -58,9 +58,9 @@
             <hr />
             <div class="input-wrapper">
               <label for="Name_mentor"
-                >Nome do seu mentor <span>(só o primeiro nome)</span></label
+                >Nome do seu mentor<span>(só o primeiro nome)</span></label
               >
-              <input id="Name_mentor" type="text" />
+              <input id="Name_mentor" type="text" required />
             </div>
           </fieldset>
           <fieldset>
@@ -69,24 +69,43 @@
             <h2>Primeira mentoria</h2>
             <div class="input-group">
               <div class="input-wrapper">
-                <label for="date">Data<span>(DD/MM/AAAA)</span></label>
-                <input id="date" type="date" />
+                <label for="1-date">Data<span>(DD/MM/AAAA)</span></label>
+                <input id="1-date" type="date" required />
               </div>
               <div class="input-group">
                 <div class="input-wrapper">
-                  <label for="hour-start">Das</label>
-                  <input id="hour-start" type="time" />
+                  <label for="1-hour-start">Das</label>
+                  <input id="1-hour-start" type="time" required />
                 </div>
                 <div class="input-wrapper">
-                  <label for="hour-end">Até</label>
-                  <input id="hour-end" type="time" />
+                  <label for="1-hour-end">Até</label>
+                  <input id="1-hour-end" type="time" required />
+                </div>
+              </div>
+            </div>
+            <h2>Segunda mentoria</h2>
+            <div class="input-group">
+              <div class="input-wrapper">
+                <label for="2-date">Data<span>(DD/MM/AAAA)</span></label>
+                <input id="2-date" type="date" />
+              </div>
+              <div class="input-group">
+                <div class="input-wrapper">
+                  <label for="2-hour-start">Das</label>
+                  <input id="2-hour-start" type="time" />
+                </div>
+                <div class="input-wrapper">
+                  <label for="2-hour-end">Até</label>
+                  <input id="2-hour-end" type="time" />
                 </div>
               </div>
             </div>
           </fieldset>
         </form>
-      </div>
-      <div><button></button></div>
-    </main>
+      </main>
+      <footer>
+        <button form="my-form">Salvar</button>
+      </footer>
+    </div>
   </body>
 </html>
